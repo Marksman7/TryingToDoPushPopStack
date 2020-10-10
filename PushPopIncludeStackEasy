@@ -1,0 +1,24 @@
+#include <iostream>
+#include <stack>
+
+using namespace std;
+
+int main()
+{
+    stack<int> StackingIt;
+
+    StackingIt.push(1);
+    StackingIt.push(2);
+    StackingIt.push(3);
+
+    cout << "Number of ints on the stack " << StackingIt.size() << endl;
+
+    while (!StackingIt.empty())
+    {
+        cout << "popping " << StackingIt.top() << endl;
+        StackingIt.pop();
+
+    }
+    
+
+}
